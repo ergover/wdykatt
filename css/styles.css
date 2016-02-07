@@ -1,0 +1,56 @@
+
+h1 {margin:0;}
+
+.card-container{
+	perspective:3000000px;
+}
+
+.card {
+	margin:20px;
+	position: relative;
+	color:#fff;
+	text-align: center;
+	line-height: 100px;
+	width: 200px;
+	height: 200px;
+	background: #5677fc;
+	transition: all 0.6s ease;
+	transform-style:preserve-3d;
+}
+
+.front, .back{
+	background: #5677fc;
+	position: absolute;
+	top:0;
+	left:0;
+	widows: 200px;	
+	height: 200px;
+	backface-visibility:hidden;
+}
+
+.back {
+	transform:rotateY(180deg);
+}
+.card:hover {
+transform:rotateY(180deg);
+}
+
+mark {
+	color:white;
+	background: red;
+}
+
+.slovo {
+	width: 15%;
+	height: 200px;
+}
+
+img {
+	border:10px solid blue;
+	padding:50px;
+	background-color: red;
+	margin:0px;
+	border-bottom-color: black;
+	border-right-color:orange;
+}
+
